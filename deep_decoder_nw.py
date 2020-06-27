@@ -17,7 +17,7 @@ from skimage.color import rgb2gray, rgba2rgb, gray2rgb
 # from skimage.color import rgb2gray, rgba2rgb
 
 
-def build_decoder():
+def build_decoder(latent_dim):
     decoder = tf.keras.models.Sequential()
     for _ in range(5):
         decoder.add(
